@@ -17,22 +17,16 @@ jobs:
         with:
           node-version: 18
 
-      - name: Navigate to Project Directory
-        run: cd p3p  # Make sure this is the correct folder name
-
       - name: Install Dependencies
         run: |
-          cd p3p  # Go to the project folder where package.json exists
           npm install
           npm install @vitejs/plugin-vue --save-dev
 
       - name: Build Project
-        run: |
-          cd p3p
-          npm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./p3p/dist
+          publish_dir: ./dist
