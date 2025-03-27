@@ -1,0 +1,16 @@
+{
+  "name": "p3p",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "homepage": "https://itsaali30.github.io/p3p"
+}
